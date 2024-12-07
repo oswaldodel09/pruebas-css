@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/02/10/04/brooklyn-bridge-1791001_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.login-container {
+    background-color: #e0dada42;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.title, .title2{
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+.input-container input:focus {
+    border-color: #fcfdfd;
+    outline: none;
+}
+
+.submit-container{
+    width: 100%;
+    background-color: #007bff65;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+
+.unalinea {
+    margin-top: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.849);
+    padding-top: 15px;
+}
+
+.checkbox{
+    margin-right: 10px;
+    margin-bottom: 15px;
+}

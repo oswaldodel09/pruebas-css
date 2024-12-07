@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(https://img.freepik.com/fotos-premium/fondo-textura-agua_114853-487.jpg?w=740);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  background: white;
+  width: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+.redes {
+  background-color: #1a0f7e;
+  padding: 30px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Espaciado entre botones */
+  gap: 15px;
+}
+
+.registro {
+  padding: 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 93%;
+  padding: 10px;
+  /* Más espacio interno */
+  margin: 10px 0;
+  border: 1px solid blue;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  /* Flexbox para alinear el ícono y el texto */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+
+}
+
+.Facebook {
+  background-color: #3b5998;
+}
+
+.Twitter {
+  background-color: #1da1f2;
+}
+
+.Google {
+  background-color: #db4437;
+}
+
+.Behance {
+  background-color: #030914;
+}
+
+/* Ajustes para los íconos */
+button img {
+  width: 20px;
+  height: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 22px;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  
+}

@@ -1,0 +1,386 @@
+body {
+    background: #451374;
+}
+
+.consola{
+  position: relative;
+  display: block;
+  margin: 30px auto;
+  width: 420px;
+  height: 697px;
+  background: #eee;
+  border-radius: 10px 10px 60px 10px;
+  box-shadow: -15px -15px 40px -5px inset rgba(0, 0, 0, 0.692);
+}
+
+.consola:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 31px;
+  border-bottom: 4px solid #a3a2a2a6;
+}
+.consola:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 334px;
+  height: 31px;
+  border-left: 4px solid #a3a2a2a6;
+  border-right: 4px solid #a3a2a2a6;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.consola .pantalla {
+  position: relative;
+  top: 60px;
+  left: 40px;
+  width: 342px;
+  height: 272px;
+  margin-bottom: 58px;
+  background-color: #777;
+  border-radius: 13px 13px 50px 13px;
+}
+
+.consola .pantalla .pantallainterna{
+  position: relative;
+  top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #bdae58;
+  width: 225px;
+  height: 205px;
+  box-shadow: inset 3px 3px rgba(0,0,0,0.15);
+}
+
+.consola .pantalla .pantallainterna .header {
+  position: relative;
+  top: -30px;
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 10px;
+  font-family: sans-serif;
+  color: #b3b3b3;
+}
+
+.consola .pantalla .pantallainterna .header:before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  top: 12px;
+  width: 90px;
+  height: 3px;
+  background-color: #8b1d90;
+  box-shadow: 0 6px 0 #283593;
+}
+
+.consola .pantalla .pantallainterna .header:after {
+  content: "";
+  position: absolute;
+  right: -46px;
+  top: 12px;
+  width: 38px;
+  height: 3px;
+  background-color: #8b1d90;
+  box-shadow: 0 6px 0 #283593;
+}
+
+.consola .pantalla .pantallainterna .texto {
+  display: inline;
+  position: relative;
+  top: -26px;
+  left: 35%;
+  color: #8a891f;
+  font-size: 17px;
+  font-family: "Pretendo";
+  z-index: 10;
+}
+
+.consola .pantalla .pantallainterna .texto .copy {
+  position: relative;
+  display: inline;
+  top: -2px;
+  margin-left: 2px;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.consola .controles {
+  display: block;
+  position: relative;
+  margin-top: 90px;
+}
+
+.consola .controles .direccion {
+  position: relative;
+  margin-left: 40px;
+  top: 60px;
+}
+
+.consola .controles .direccion:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: #353535;
+  border-radius: 100%;
+}
+.consola .controles .direccion .vertical,
+.consola .controles .direccion .horizontal {
+  position: absolute;
+  left: 30px;
+  width: 30px;
+  height: 90px;
+  background: #444;
+  border-radius: 5px;
+}
+.consola .controles .direccion .vertical:before,
+.consola .controles .direccion .horizontal:before {
+  content: "";
+  position: relative;
+  top: 99px;
+  left: 8px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #a5a4a4;
+}
+.consola .controles .direccion .vertical:after,
+.consola .controles .direccion .horizontal:after {
+  content: "";
+  position: relative;
+  top: -27px;
+  left: -5.6px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #a5a4a4;
+}
+.consola .controles .direccion .horizontal {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.consola .controles .boton-AB {
+  position: absolute;
+  top: 72px;
+  left: 252px;
+  width: 130px;
+  height: 60px;
+  background: #dfdfdf;
+  border-radius: 30px;
+  -webkit-transform: rotate(-25deg);
+}
+
+.consola .controles .B::before{
+  content: "B";
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  font-size: 25px;
+  color: #283593;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.consola .controles .B::after{
+  content: "A";
+  position: absolute;
+  top: 60px;
+  left: 90px;
+  font-size: 25px;
+  color: #283593;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.consola .controles .boton-AB:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  width: 44px;
+  height: 44px;
+  background: #a93671;
+  box-shadow: 68px 0 #a93671;
+  border-radius: 100%;
+  font-size: 25px;
+  color: #283593;
+  font-weight: bold;
+  -webkit-transform: rotate(180deg);
+}
+
+.consola .controles .boton-start-select .Select::before{
+  content: "Select";
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  font-size: 15px;
+  color: #283593;
+  font-family: sans-serif;
+}
+
+.consola .controles .boton-start-select .Start::after{
+  content: "Start";
+  position: absolute;
+  top: 45px;
+  left: 70px;
+  font-size: 15px;
+  color: #283593;
+  font-family: sans-serif;
+}
+
+.consola .controles .boton-start-select {
+  position: absolute;
+  top: 230px;
+  left: 140px;
+  height: 12px;
+  width: 60px;
+  background: #999;
+  border-radius: 10px;
+  -webkit-transform: rotate(-25deg);
+  box-shadow: 57px 27px #999, 0 0 0 5px #dfdfdf, 57px 27px 0 5px #dfdfdf;
+}
+
+.consola .audio {
+  content: "";
+  position: relative;
+  height: 70px;
+  width: 8px;
+  top: 260px;
+  left: 300px;
+  background: #ddd;
+  border-radius: 4px;
+  -webkit-transform: rotate(-25deg);
+  box-shadow: 20px 0 #ddd, 40px 0 #ddd, 60px 0 #ddd, 80px 0 #ddd, 100px 0 #ddd;
+}
+
+.on-off {
+  position: absolute;
+  top: 2px;
+  left: 20%;
+  padding: 3px 5px;
+  transform: translateX(-50%);
+  color: #a1a1a1;
+  background-color: #cccccc98;
+  font-size: 8px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+.on-off:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  top: -2px;
+  background-color: #cecccc;
+  left: 6px;
+}
+.on-off:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 5px;
+  top: -2px;
+  left: 9px;
+  background-color: #6e6d6d;
+  box-shadow: 5px 0 #47474777;
+  border-radius: 0 0 3px 3px;
+}
+
+  /* Agregar un efecto de brillo a la pantalla */
+  .consola .pantalla .pantallainterna {
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.9);
+}
+
+.consola .pantalla .power {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 100px;
+  left: 20px;
+  border-radius: 100%;
+  background-color: #b98181;
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+.consola .pantalla .power:before {
+  content: "BATTERY";
+  position: relative;
+  top: 18px;
+  left: -10px;
+  font-size: 8px;
+  font-family: sans-serif;
+  color: #b3b3b3;
+}
+
+.audifonos {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  padding: 3px 5px;
+  transform: translateX(-50%);
+  color: #07070756;
+  background-color: #929191c0;
+  font-size: 10px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.audifonos:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 5px;
+  bottom: -4px;
+  background-color: #dddddd73;
+  left: 9px;
+}
+.audifonos:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 5px;
+  bottom: -4px;
+  left: 12px;
+  background-color: #dddddd73;
+  box-shadow: 5px 0 #dddddd73;
+  border-radius: 4px 4px 0 0;
+}
+
+.nintendo{
+  display: flex;
+  position: absolute;
+  top: 250px;
+  left: -80px;
+  color: #3f1f8a;
+  font-size: 23px;
+  font-family: "Pretendo";
+  font-weight: bold;
+}
+
+.tm{
+  position: relative;
+  display: inline;
+  top: 10px;
+  left: 7px;
+  font-size: 10px;
+  font-family: monospace;
+}
